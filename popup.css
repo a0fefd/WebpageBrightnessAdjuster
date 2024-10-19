@@ -1,0 +1,19 @@
+* {
+    background: #424242;
+    color: #e3e3c7;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    text-align: center;
+}
+
+input {
+    accent-color: #807c72;
+
+    /*background: #a0fefd;*/
+    border: solid 1px #000;
+    border-radius: 8px;
+    height: 7px;
+    width: 140px;
+    outline: none;
+    transition: background 450ms ease-in;
+    /*-webkit-appearance: none;*/
+}
