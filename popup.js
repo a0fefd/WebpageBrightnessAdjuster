@@ -8,9 +8,12 @@ function getCurrentTab(callback) {
     });
 }
 
-let john = document.querySelector("#brightness").value;
+let john = 0;
+john = document.querySelector("#brightness").value;
+// }
 setInterval(function () {
     john = document.querySelector("#brightness").value;
+    document.querySelector("#brightness_num").text = john;
 }, 20);
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     if (request.action === 'get_data') {
